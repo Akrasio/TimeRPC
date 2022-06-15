@@ -1,28 +1,28 @@
-richpresence
+//require the module of the richpresence
 var RPC = require("discord-rpc");
 var rpc = new RPC.Client({
   transport: "ipc"
 });
 
-decoration
+//thats just decoration
 require("colors");
-;)
+//A Map for us | for the cooldowns ;)
 let map = new Map();
 
-day?
+// Midnight of the current start day?
 const event = new Date();
 event.setHours(00, 00, 00)
 
-it
+//once the rich presence got ready, set it
 rpc.on("ready", () => {
-  presence
+  //set the rich presence
   set_rpc()
-  seconds
+  //LOOP FOR FOR each 120 seconds
   setInterval(() => {
     set_rpc();
   }, 60e3)
 
-  ready
+  //log that it's ready
   try {
     const stringlength = 69;
     console.log("\n")
@@ -38,19 +38,19 @@ rpc.on("ready", () => {
 });
 
 
-tool
+//login to the rich presence tool
 rpc.login({
   clientId: "638394395988852766",
 });
 
-presence
+//function for calling the rich presence
 async function set_rpc(option) {
-  cooldown
+  //if not on cooldown
   if (!map.has("rpccooldown")) {
-    cooldown
+    //set the cooldown
     map.set("rpccooldown")
     if (option == "re") {
-      console
+      //log it in the console
       try {
         const stringlength = 69;
         console.log("\n")
@@ -64,7 +64,7 @@ async function set_rpc(option) {
         /* */
       }
     }
-    activity
+    //set the activity
     const nowTime = new Date();
     const times = nowTime.getHours();
     let image = String("clock"+times);
@@ -76,14 +76,14 @@ async function set_rpc(option) {
       "largeImageText": "(Local Time):",
       "startTimestamp": event
     })
-    seconds)
+    //delete the cooldown after some 15000ms (15 seconds)
     setTimeout(() => {
       map.delete("rpccooldown");
     }, 15000)
   }
-  cooldown
+  //if on cooldown
   else {
-    information
+    //log information
     try {
       const stringlength = 69;
       console.log("\n")
