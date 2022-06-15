@@ -1,13 +1,13 @@
 {
-  "name": "clock-rpc",
-  "version": "1.4.2",
-  "description": "A Discord Rich Presence built with nodejs and discord-rpc, with 2 buttons!",
+  "name": "timerpc",
+  "version": "0.0.2",
+  "description": "A Discord Rich Presence built with nodejs and discord-rpc!",
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/index.js"
   },
-  "author": "Tomato#6966",
+  "author": "Akrasio",
   "license": "GPL-3.0",
   "dependencies": {
     "colors": "^1.4.0",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tomato6966/Discord-Rich-Presence.git"
+    "url": "git+https://github.com/Akrasio/TimeRPC.git"
   },
   "keywords": [
     "Discord",
@@ -23,9 +23,9 @@
     "RichPresence",
     "Rich-Presence",
     "Presence",
-    "Buttons",
+    "Time",
     "Status",
-    "Disscord-rpc"
+    "Discord-rpc"
   ],
   "pkg": {
     "outputPath": "./exec",
@@ -35,8 +35,8 @@
   },
   "bin": "src/index.js",
   "bugs": {
-    "url": "https://github.com/Tomato6966/Discord-Rich-Presence/issues"
+    "url": "https://github.com/Akrasio/TimeRPC/issues"
   },
-  "homepage": "https://github.com/Tomato6966/Discord-Rich-Presence#readme",
+  "homepage": "https://github.com/Akrasio/TimeRPC#readme",
   "devDependencies": {}
 }
