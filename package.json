@@ -11,7 +11,8 @@
   "license": "GPL-3.0",
   "dependencies": {
     "colors": "^1.4.0",
-    "discord-rpc": "^3.2.0"
+    "discord-rpc": "^3.2.0",
+    "rcedit": "^4.0.1"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,5 @@
   "bugs": {
     "url": "https://github.com/Akrasio/TimeRPC/issues"
   },
-  "homepage": "https://github.com/Akrasio/TimeRPC#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/Akrasio/TimeRPC#readme"
 }

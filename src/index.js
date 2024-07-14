@@ -29,7 +29,7 @@ rpc.on("ready", () => {
     console.log(`     ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓`.bold.brightGreen)
     console.log(`     ┃ `.bold.brightGreen + " ".repeat(-1 + stringlength - ` ┃ `.length) + "┃".bold.brightGreen)
     console.log(`     ┃ `.bold.brightGreen + `  Discord Rich Presence Ready | made by Akrasio`.bold.brightGreen + " ".repeat(-1 + stringlength - ` ┃ `.length - `  Discord Rich Presence Ready | made by Akrasio`.length) + "┃".bold.brightGreen)
-    console.log(`     ┃ `.bold.brightGreen + `  |-> ${`Displaying for: `.magenta}${rpc.user.username}#${rpc.user.discriminator}`.bold.brightGreen + " ".repeat(-1 + stringlength - ` ┃ `.length - `  |-> Displaying for: ${rpc.user.username}#${rpc.user.discriminator}`.length) + "┃".bold.brightGreen)
+    console.log(`     ┃ `.bold.brightGreen + `  |-> ${`Displaying for: `.magenta}@${rpc.user.username}`.bold.brightGreen + " ".repeat(-1 + stringlength - ` ┃ `.length - `  |-> Displaying for: ${rpc.user.username}#${rpc.user.discriminator}`.length) + "┃".bold.brightGreen)
     console.log(`     ┃ `.bold.brightGreen + " ".repeat(-1 + stringlength - ` ┃ `.length) + "┃".bold.brightGreen)
     console.log(`     ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛`.bold.brightGreen)
   } catch {
@@ -40,7 +40,7 @@ rpc.on("ready", () => {
 
 //login to the rich presence tool
 rpc.login({
-  clientId: "638394395988852766",
+  clientId: "1236189495636787230", // Replace With YOUR Application ID
 });
 
 //function for calling the rich presence
@@ -67,7 +67,7 @@ async function set_rpc(option) {
     //set the activity
     const nowTime = new Date();
     const times = nowTime.getHours();
-    let image = String("clock"+times);
+    let image = "https://cdn.discordapp.com/emojis/1183044387358384259.gif"; // Replace with your own image/gif
     if (times == 0) image = "clock";
     await rpc.setActivity({
       "details": "━━━━━━━━━━",
