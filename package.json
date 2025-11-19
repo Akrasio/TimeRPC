@@ -1,6 +1,6 @@
 {
   "name": "timerpc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Discord Rich Presence built with nodejs and discord-rpc!",
   "main": "./src/index.js",
   "scripts": {
