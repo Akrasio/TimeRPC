@@ -67,13 +67,10 @@ async function set_rpc(option) {
     //set the activity
     const nowTime = new Date();
     const times = nowTime.getHours();
-    let image = "https://cdn.discordapp.com/emojis/1183044387358384259.gif"; // Replace with your own image/gif
-    if (times == 0) image = "clock";
+    let image = "https://media1.tenor.com/m/Dcv8e4RCXsIAAAAC/time-rabbit.gif"; // Replace with your own image/gif
     await rpc.setActivity({
-      "details": "━━━━━━━━━━",
-      "state": "Current Local Time:",
+      "details": "‎Local Time:",
       "largeImageKey": image,
-      "largeImageText": "(Local Time):",
       "startTimestamp": event
     })
     //delete the cooldown after some 15000ms (15 seconds)
