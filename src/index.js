@@ -3,15 +3,13 @@ var RPC = require("discord-rpc");
 var rpc = new RPC.Client({
   transport: "ipc"
 });
-
 //thats just decoration
 require("colors");
 //A Map for us | for the cooldowns ;)
 let map = new Map();
 
 // Midnight of the current start day?
-const event = new Date();
-event.setHours(00, 00, 00)
+
 
 //once the rich presence got ready, set it
 rpc.on("ready", () => {
@@ -67,7 +65,9 @@ async function set_rpc(option) {
     //set the activity
     const nowTime = new Date();
     const times = nowTime.getHours();
-    let image = "https://media1.tenor.com/m/Dcv8e4RCXsIAAAAC/time-rabbit.gif"; // Replace with your own image/gif
+    const event = new Date();
+    event.setHours(00, 00, 00);
+    let image = "https://cdn.discordapp.com/emojis/1440858142928802002.gif?size=4096"; // Replace with your own image/gif
     await rpc.setActivity({
       "details": "‎Local Time:",
       "largeImageKey": image,
